@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .nabcontainer{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: larger;
+            padding: 10px 10px;
+            background: black;
+            
+          
+            
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            position: relative;
+            margin: 15px;
+            letter-spacing: 2px;
+            font-family: fantasy;
+        }
+        a:after{
+            content: "";
+            position: absolute;
+            background-color: aqua;
+            height: 5px;
+            width: 0;
+            left: 0;
+            bottom: -5px;
+            transition:  0.3s ease-in-out;
+            
+        }
+        a:hover:after{
+            width: 100%;
+        }
+    </style>
+</body>
+    <div class="nabcontainer">
+        <nav>
+            <a href="#home.html">Home</a>
+            <a href="#home.html">About me</a>
+            <a href="#home.html">Portfolio</a>
+            <a href="#home.html">Contact</a>
+
+        </nav>
+    </div>
+</html>
